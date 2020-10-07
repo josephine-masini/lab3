@@ -75,5 +75,11 @@ On remarque que sardar est le plus petit avec 4,0K octets, alors que son contenu
  15. 
  
  
+ 
+ 
+ 21. ``` josephine@masini-x220:~/Bureau/lab3/5AS05-partie3$ grep -w "trust" Microsoft University: "It's not that we don't trust the research, it's just that anti-trust laws.```
+
+ 
+ 
 
 
