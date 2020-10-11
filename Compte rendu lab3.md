@@ -72,15 +72,20 @@ On remarque que sardar est le plus petit avec 4,0K octets, alors que son contenu
  
  14. On va à la dernière ligne avec la commande ```G``` et on ajoute une ligne à la fin de la dernière écrite avec ```o```, on écrit ensuite : Welcome systemes communicants.
  
- 15. 
+ 15. On fait ```/gravelly ``` + ```Enter``` et ```dw``` pour enlever un mot + ```Enter```.
  
+ 16. ```:w```, pour sauvegarder un fichier sans le fermer, puis ```Enter```.
  
+ 17. ```/planet``` + ``` Enter``` et ```n```, le nombre de fois que le mot est repéré de nouveau en allant vers le bas du texte.
  
+ 19. On fait : ```G```, pour aller à la fin du fichier et on tape ```?BEEP```, pour trouver la dernière occurence du mot BEEP, puis on tape : ```n``` pour remonter vers le haut et cette fois-ci trouver les occurences précédentes du mot.
  
- 21. ``` josephine@masini-x220:~/Bureau/lab3/5AS05-partie3$ grep -w "trust" Microsoft
+ 20. Pour afficher les 20 dernières lignes d'un fichier : ``` tail -n 20 sardar3.txt ``` .
+  
+ 21. Pour chercher le mot trust dans Microsoft :``` josephine@masini-x220:~/Bureau/lab3/5AS05-partie3$ grep -w "trust" Microsoft```
  ```University: "It's not that we don't trust the research, it's just that anti-trust laws.```
 
-22. ``` 5AS05-partie3/Microsoft:    2.$$ key--When this key is pressed, money is transferred```
+22. Pour chercher money dans tous les fichiers du répertoire :``` 5AS05-partie3/Microsoft:    2.$$ key--When this key is pressed, money is transferred```
 ```5AS05-partie3/answering-machine.txt:	If you need any money, or if you just want to check out my
 5AS05-partie3/answering-machine.txt:	the money.  If you are my parents, please send money.  If you
 5AS05-partie3/answering-machine.txt:	money.  If you are my friends, you owe me money.  If you are a
