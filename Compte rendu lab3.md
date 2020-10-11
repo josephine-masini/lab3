@@ -98,9 +98,4 @@ On remarque que sardar est le plus petit avec 4,0K octets, alors que son contenu
 5AS05-partie3/sardar/sardar3.txt:money.
 5AS05-partie3/sardar/sardar3.txt:eyes and does not find any money. He slowly raises his head and now
 5AS05-partie3/sardar/sardar3.txt:p.s. i was going to send you some money, but the
-5AS05-partie3/sardar/sardar1.txt:LoveMom. P.S. I was going to send you some money but the envelope was```
-
- 
- 
-
-
+5AS05-partie3/sardar/sardar1.txt:LoveMom. P.S. I was going to send you some money but the envelope was ```
