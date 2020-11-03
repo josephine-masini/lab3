@@ -85,7 +85,7 @@ On remarque que sardar est le plus petit avec 4,0K octets, alors que son contenu
  21. Pour chercher le mot trust dans Microsoft :``` josephine@masini-x220:~/Bureau/lab3/5AS05-partie3$ grep -w "trust" Microsoft```
  ```University: "It's not that we don't trust the research, it's just that anti-trust laws.```
 
-22. Pour chercher money dans tous les fichiers du répertoire : on écrit ```grep -R```  ```5AS05-partie3/Microsoft:    2.$$ key--When this key is pressed, money is transferred```
+22. Pour chercher money dans tous les fichiers du répertoire : on écrit ```grep -R "money"```  ```5AS05-partie3/Microsoft:    2.$$ key--When this key is pressed, money is transferred```
 ```
 5AS05-partie3/answering-machine.txt:	If you need any money, or if you just want to check out my
 5AS05-partie3/answering-machine.txt:	the money.  If you are my parents, please send money.  If you
