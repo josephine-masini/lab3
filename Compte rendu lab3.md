@@ -85,20 +85,22 @@ On remarque que sardar est le plus petit avec 4,0K octets, alors que son contenu
  21. Pour chercher le mot trust dans Microsoft :``` josephine@masini-x220:~/Bureau/lab3/5AS05-partie3$ grep -w "trust" Microsoft```
  ```University: "It's not that we don't trust the research, it's just that anti-trust laws.```
 
-22. Pour chercher money dans tous les fichiers du répertoire : on écrit ```grep -R``` 5AS05-partie3/Microsoft:    2.$$ key--When this key is pressed, money is transferred```
-```5AS05-partie3/answering-machine.txt:	If you need any money, or if you just want to check out my```
-```5AS05-partie3/answering-machine.txt:	the money.  If you are my parents, please send money.  If you```
-```5AS05-partie3/answering-machine.txt:	money.  If you are my friends, you owe me money.  If you are a```
-```5AS05-partie3/answering-machine.txt:	female, don't worry, I have plenty of money.```
-```5AS05-partie3/answering-machine.txt:	the money.  I'll get back to you as soon as it's safe for you to```
-```5AS05-partie3/sardar/sardar3.txt:Santa Singh needed some money desperately.```
-```5AS05-partie3/sardar/sardar3.txt:Sikh will never accept the money. So he drops a 100 rupee note, from```
-```5AS05-partie3/sardar/sardar3.txt:day for money. Now the priest is really annoyed with Santa. The Priest```
-```5AS05-partie3/sardar/sardar3.txt:decides that he is not going to give any more money to```
-```5AS05-partie3/sardar/sardar3.txt:money.```
-```5AS05-partie3/sardar/sardar3.txt:eyes and does not find any money. He slowly raises his head and now```
-```5AS05-partie3/sardar/sardar3.txt:p.s. i was going to send you some money, but the```
-```5AS05-partie3/sardar/sardar1.txt:LoveMom. P.S. I was going to send you some money but the envelope was```
+22. Pour chercher money dans tous les fichiers du répertoire : on écrit ```grep -R```  ```5AS05-partie3/Microsoft:    2.$$ key--When this key is pressed, money is transferred```
+```
+5AS05-partie3/answering-machine.txt:	If you need any money, or if you just want to check out my
+5AS05-partie3/answering-machine.txt:	the money.  If you are my parents, please send money.  If you
+5AS05-partie3/answering-machine.txt:	money.  If you are my friends, you owe me money.  If you are a
+5AS05-partie3/answering-machine.txt:	female, don't worry, I have plenty of money.```
+5AS05-partie3/answering-machine.txt:	the money.  I'll get back to you as soon as it's safe for you to
+5AS05-partie3/sardar/sardar3.txt:Santa Singh needed some money desperately.```
+5AS05-partie3/sardar/sardar3.txt:Sikh will never accept the money. So he drops a 100 rupee note, from
+5AS05-partie3/sardar/sardar3.txt:day for money. Now the priest is really annoyed with Santa. The Priest
+5AS05-partie3/sardar/sardar3.txt:decides that he is not going to give any more money to```
+5AS05-partie3/sardar/sardar3.txt:money.
+5AS05-partie3/sardar/sardar3.txt:eyes and does not find any money. He slowly raises his head and now
+5AS05-partie3/sardar/sardar3.txt:p.s. i was going to send you some money, but the
+5AS05-partie3/sardar/sardar1.txt:LoveMom. P.S. I was going to send you some money but the envelope was
+```
 
 23. On utilise la flèche du haut pour réécrire automatiquement la commande précédente en remplacant le mot "money" par "Money". On affiche ensuite la liste de la même manière qu'à la question 22.
 
