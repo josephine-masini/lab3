@@ -104,7 +104,33 @@ On remarque que sardar est le plus petit avec 4,0K octets, alors que son contenu
 
 23. On utilise la flèche du haut pour réécrire automatiquement la commande précédente en remplacant le mot "money" par "Money". On affiche ensuite la liste de la même manière qu'à la question 22.
 
-24.
+24. On se place dans le répertoire ```AS05-partie3```, et on tape : ```mv .lightbulb lightbulb```, afin que le fichier caché devienne apparent. Et on le voit à présent dans le répertoire :
+```
+josephine@masini-x220:~/Bureau/lab3/5AS05-partie3$ ls
+ answering-machine.txt   lightbulb   sardar
+'Compte rendu lab3.md'   README.md   sardar3.txt
+```
+
+25. On fait un ```cd sardar```, pour rentrer dans le répertoire, puis on tape ```pwd```, pour afficher le répertoire dans lequel on se trouve. On obtient :
+```
+josephine@masini-x220:~/Bureau/lab3/5AS05-partie3/sardar$ pwd
+/home/panda/Bureau/lab3/5AS05-partie3/sardar
+```
+Nous sommes bien dans le répertoire sardar.
+
+26. Pour déplacer un fichier on fait : ```mv sardar3.txt ..```, qui va le placer dans le répertoire précédent, fait ```cd ..```, afin de vérifier qu'il a bien été déplacé. On obtient : ( les questions précédentes ont déjà été faites au moment de la capture, on a donc le fichier Microsoft de supprimé ).
+```
+josephine@masini-x220:~/Bureau/lab3/5AS05-partie3$ ls
+ answering-machine.txt   lightbulb   sardar
+'Compte rendu lab3.md'   README.md   sardar3.txt
+
+```
+Le fichier a bien été déplacé dans le répertoire parent.
+
+27. Déjà fait à la question précédente avec ```cd ..```.
+
+28.
+
 
 
 
