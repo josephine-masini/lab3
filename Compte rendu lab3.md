@@ -141,7 +141,24 @@ Le fichier a bien été supprimé.
 cp 5AS05-partie3/* /archive
 
 ```
-30.
+30. On tape : ```ln -s sardar/* .```, pour créer un lien symbolique entre le répertoire courant et le répertoire sardar, lui même dans ce répertoire courant.
+
+31. Oui, le répertoire d'origine du fichier est noté, le fichier est en gras d'une couleur différente des autres, on voit bien que c'est un fichier différent.
+```
+ls -l
+
+total 176
+-rw-r--r-- 1 josephine panda 70314 oct.   7 10:28  answering-machine.txt
+-rw-r--r-- 1 josephine panda  4124 oct.   7 10:28 'Compte rendu lab3.md'
+-rw-r--r-- 1 josephine panda    41 oct.   7 10:28  lightbulb
+-rw-r--r-- 1 josephine panda    24 oct.   7 10:28  README.md
+drwxr-xr-x 2 josephine panda  4096 nov.   1 20:15  sardar
+lrwxrwxrwx 1 josephine panda    18 nov.   8 20:18  sardar1.txt -> sardar/sardar1.txt
+lrwxrwxrwx 1 josephine panda    18 nov.   8 20:18  sardar2.txt -> sardar/sardar2.txt
+-rw-r--r-- 1 josephine panda 81994 oct.   7 10:28  sardar3.txt
+
+```
+32. On écrit ```rm sardar/sardar2.txt``` et on refait ```ls -l```, le nom du fichier s'affichhe de la même facon mais en rouge, pour signaler qu'il a été supprimé, mais le lien existe toujours.
 
 
 
