@@ -160,6 +160,8 @@ lrwxrwxrwx 1 josephine panda    18 nov.   8 20:18  sardar2.txt -> sardar/sardar2
 ```
 32. On écrit ```rm sardar/sardar2.txt``` et on refait ```ls -l```, le nom du fichier s'affichhe de la même facon mais en rouge, pour signaler qu'il a été supprimé, mais le lien existe toujours.
 
+33. On ouvre le fichier dans vim et on rajoute le message à la fin du fichier sardar1.txt. On affiche ensuite le contenu du fichier avec ```cat sardar1.txt```, on a bien la modification d'enregistrée.
+
 
 
 
