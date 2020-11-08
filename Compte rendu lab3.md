@@ -129,8 +129,19 @@ Le fichier a bien été déplacé dans le répertoire parent.
 
 27. Déjà fait à la question précédente avec ```cd ..```.
 
-28.
+28. On tape ```rm Microsoft``` et on fait ```ls``` dans le répertoire courant pour vérifier qu'il a été supprimé :
+```
+answering-machine.txt   lightbulb   sardar
+'Compte rendu lab3.md'   README.md   sardar3.txt
+```
+Le fichier a bien été supprimé.
 
+29. On retourne sur le répertoire parent du répertoire courant ```cd ..```, on crée le répertoire archive : ```mkdir archive```, et on copie le répertoire :
+```
+cp 5AS05-partie3/* /archive
+
+```
+30.
 
 
 
