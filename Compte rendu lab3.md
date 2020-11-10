@@ -162,6 +162,11 @@ lrwxrwxrwx 1 josephine panda    18 nov.   8 20:18  sardar2.txt -> sardar/sardar2
 
 33. On ouvre le fichier dans vim et on rajoute le message à la fin du fichier sardar1.txt. On affiche ensuite le contenu du fichier avec ```cat sardar1.txt```, on a bien la modification d'enregistrée.
 
+34. On affiche les droits d'accès avec ```ls -l```, et on voit en question 31. que j'ai déjà tous les droits ```rwx```, écriture, lecture et exécution. 
+
+35. Si je n'avais pas eu les droits d'écriture, il aurait fallu écrire : ```chmod  u+w sardar1.txt``` , pour accorder à l'utilisateur les droits d'écriture du fichier.
+
+36.
 
 
 
