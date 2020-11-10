@@ -166,7 +166,9 @@ lrwxrwxrwx 1 josephine panda    18 nov.   8 20:18  sardar2.txt -> sardar/sardar2
 
 35. Si je n'avais pas eu les droits d'écriture, il aurait fallu écrire : ```chmod  u+w sardar1.txt``` , pour accorder à l'utilisateur les droits d'écriture du fichier.
 
-36.
+36. Pour compresser, on fait : ```tar jcvf archive_lab3.tar.bz2 5AS05-partie3```.
+
+37. Pour avoir la liste avec les droits d'accès, on fait ```tar jtvf archive_lab3.tar.bz2```.
 
 
 
