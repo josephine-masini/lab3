@@ -72,8 +72,104 @@ On remarque que sardar est le plus petit avec 4,0K octets, alors que son contenu
  
  14. On va à la dernière ligne avec la commande ```G``` et on ajoute une ligne à la fin de la dernière écrite avec ```o```, on écrit ensuite : Welcome systemes communicants.
  
- 15. 
+ 15. On fait ```/gravelly ``` + ```Enter``` et ```dw``` pour enlever un mot + ```Enter```.
  
+ 16. ```:w```, pour sauvegarder un fichier sans le fermer, puis ```Enter```.
  
+ 17. ```/planet``` + ``` Enter``` et ```n```, le nombre de fois que le mot est repéré de nouveau en allant vers le bas du texte.
+ 
+ 19. On fait : ```G```, pour aller à la fin du fichier et on tape ```?BEEP```, pour trouver la dernière occurence du mot BEEP, puis on tape : ```n``` pour remonter vers le haut et cette fois-ci trouver les occurences précédentes du mot.
+ 
+ 20. Pour afficher les 20 dernières lignes d'un fichier : ``` tail -n 20 sardar3.txt ``` .
+  
+ 21. Pour chercher le mot trust dans Microsoft :``` josephine@masini-x220:~/Bureau/lab3/5AS05-partie3$ grep -w "trust" Microsoft```
+ ```University: "It's not that we don't trust the research, it's just that anti-trust laws.```
+
+22. Pour chercher money dans tous les fichiers du répertoire : on écrit ```grep -R "money"```  ```5AS05-partie3/Microsoft:    2.$$ key--When this key is pressed, money is transferred```
+```
+5AS05-partie3/answering-machine.txt:	If you need any money, or if you just want to check out my
+5AS05-partie3/answering-machine.txt:	the money.  If you are my parents, please send money.  If you
+5AS05-partie3/answering-machine.txt:	money.  If you are my friends, you owe me money.  If you are a
+5AS05-partie3/answering-machine.txt:	female, don't worry, I have plenty of money.```
+5AS05-partie3/answering-machine.txt:	the money.  I'll get back to you as soon as it's safe for you to
+5AS05-partie3/sardar/sardar3.txt:Santa Singh needed some money desperately.```
+5AS05-partie3/sardar/sardar3.txt:Sikh will never accept the money. So he drops a 100 rupee note, from
+5AS05-partie3/sardar/sardar3.txt:day for money. Now the priest is really annoyed with Santa. The Priest
+5AS05-partie3/sardar/sardar3.txt:decides that he is not going to give any more money to```
+5AS05-partie3/sardar/sardar3.txt:money.
+5AS05-partie3/sardar/sardar3.txt:eyes and does not find any money. He slowly raises his head and now
+5AS05-partie3/sardar/sardar3.txt:p.s. i was going to send you some money, but the
+5AS05-partie3/sardar/sardar1.txt:LoveMom. P.S. I was going to send you some money but the envelope was
+```
+
+23. On utilise la flèche du haut pour réécrire automatiquement la commande précédente en remplacant le mot "money" par "Money". On affiche ensuite la liste de la même manière qu'à la question 22.
+
+24. On se place dans le répertoire ```AS05-partie3```, et on tape : ```mv .lightbulb lightbulb```, afin que le fichier caché devienne apparent. Et on le voit à présent dans le répertoire :
+```
+josephine@masini-x220:~/Bureau/lab3/5AS05-partie3$ ls
+ answering-machine.txt   lightbulb   sardar
+'Compte rendu lab3.md'   README.md   sardar3.txt
+```
+
+25. On fait un ```cd sardar```, pour rentrer dans le répertoire, puis on tape ```pwd```, pour afficher le répertoire dans lequel on se trouve. On obtient :
+```
+josephine@masini-x220:~/Bureau/lab3/5AS05-partie3/sardar$ pwd
+/home/panda/Bureau/lab3/5AS05-partie3/sardar
+```
+Nous sommes bien dans le répertoire sardar.
+
+26. Pour déplacer un fichier on fait : ```mv sardar3.txt ..```, qui va le placer dans le répertoire précédent, fait ```cd ..```, afin de vérifier qu'il a bien été déplacé. On obtient : ( les questions précédentes ont déjà été faites au moment de la capture, on a donc le fichier Microsoft de supprimé ).
+```
+josephine@masini-x220:~/Bureau/lab3/5AS05-partie3$ ls
+ answering-machine.txt   lightbulb   sardar
+'Compte rendu lab3.md'   README.md   sardar3.txt
+
+```
+Le fichier a bien été déplacé dans le répertoire parent.
+
+27. Déjà fait à la question précédente avec ```cd ..```.
+
+28. On tape ```rm Microsoft``` et on fait ```ls``` dans le répertoire courant pour vérifier qu'il a été supprimé :
+```
+answering-machine.txt   lightbulb   sardar
+'Compte rendu lab3.md'   README.md   sardar3.txt
+```
+Le fichier a bien été supprimé.
+
+29. On retourne sur le répertoire parent du répertoire courant ```cd ..```, on crée le répertoire archive : ```mkdir archive```, et on copie le répertoire :
+```
+cp 5AS05-partie3/* /archive
+
+```
+30. On tape : ```ln -s sardar/* .```, pour créer un lien symbolique entre le répertoire courant et le répertoire sardar, lui même dans ce répertoire courant.
+
+31. Oui, le répertoire d'origine du fichier est noté, le fichier est en gras d'une couleur différente des autres, on voit bien que c'est un fichier différent.
+```
+ls -l
+
+total 176
+-rw-r--r-- 1 josephine panda 70314 oct.   7 10:28  answering-machine.txt
+-rw-r--r-- 1 josephine panda  4124 oct.   7 10:28 'Compte rendu lab3.md'
+-rw-r--r-- 1 josephine panda    41 oct.   7 10:28  lightbulb
+-rw-r--r-- 1 josephine panda    24 oct.   7 10:28  README.md
+drwxr-xr-x 2 josephine panda  4096 nov.   1 20:15  sardar
+lrwxrwxrwx 1 josephine panda    18 nov.   8 20:18  sardar1.txt -> sardar/sardar1.txt
+lrwxrwxrwx 1 josephine panda    18 nov.   8 20:18  sardar2.txt -> sardar/sardar2.txt
+-rw-r--r-- 1 josephine panda 81994 oct.   7 10:28  sardar3.txt
+
+```
+32. On écrit ```rm sardar/sardar2.txt``` et on refait ```ls -l```, le nom du fichier s'affichhe de la même facon mais en rouge, pour signaler qu'il a été supprimé, mais le lien existe toujours.
+
+33. On ouvre le fichier dans vim et on rajoute le message à la fin du fichier sardar1.txt. On affiche ensuite le contenu du fichier avec ```cat sardar1.txt```, on a bien la modification d'enregistrée.
+
+34. On affiche les droits d'accès avec ```ls -l```, et on voit en question 31. que j'ai déjà tous les droits ```rwx```, écriture, lecture et exécution. 
+
+35. Si je n'avais pas eu les droits d'écriture, il aurait fallu écrire : ```chmod  u+w sardar1.txt``` , pour accorder à l'utilisateur les droits d'écriture du fichier.
+
+36. Pour compresser, on fait : ```tar jcvf archive_lab3.tar.bz2 5AS05-partie3```.
+
+37. Pour avoir la liste avec les droits d'accès, on fait ```tar jtvf archive_lab3.tar.bz2```.
+
+
 
 
